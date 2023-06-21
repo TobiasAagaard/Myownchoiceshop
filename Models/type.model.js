@@ -6,14 +6,14 @@ class ReviewModel extends Model {}
 
 ReviewModel.init({
     id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         autoIncrement: true, 
         allowNull: false,
         primaryKey: true
         
     },
     rating: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 'Untitled'
         
@@ -24,7 +24,7 @@ ReviewModel.init({
     },
     
     title: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
 

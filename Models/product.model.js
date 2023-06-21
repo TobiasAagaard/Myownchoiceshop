@@ -23,7 +23,7 @@ ProductModel.init({
     },
     
     name: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
 
@@ -34,14 +34,14 @@ ProductModel.init({
     ,
 
     brand: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     }
 
     ,
 
     type: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     }
 
@@ -54,14 +54,14 @@ ProductModel.init({
     ,
 
     image: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BLOB,
         allowNull: false
     }
 
     ,
 
     color: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     }
 

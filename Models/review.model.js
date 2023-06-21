@@ -24,7 +24,7 @@ ReviewModel.init({
     },
     
     title: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
 
