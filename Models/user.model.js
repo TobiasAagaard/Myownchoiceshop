@@ -1,9 +1,10 @@
 import { sequelize } from "../Config/db.sequelize.js";
 import { Sequelize, DataTypes, Model } from "sequelize";
 
-class ProductModel extends Model {}
 
-ProductModel.init({
+class ReviewModel extends Model {}
+
+ReviewModel.init({
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true, 
@@ -11,66 +12,30 @@ ProductModel.init({
         primaryKey: true
         
     },
-    stock: {
-        type: DataTypes.INTEGER,
+    username: {
+        type: DataTypes.STRING,
         allowNull: false,
         defaultValue: 'Untitled'
         
     },
-    price: {
+    password: {
         type: DataTypes.TEXT,
         allowNull: true
     },
     
-    name: {
+    email: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
 
-    description: {
+    birthdate: {
         type: DataTypes.INTEGER,
         allowNull: false
     }
     ,
 
-    brand: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
 
-    ,
-
-    type: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
-
-    ,   
-
-    size: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
-    ,
-
-    image: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
-
-    ,
-
-    color: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
-
-    ,
-
-
-
-
-
+    
 }, {
     sequelize, 
     modelName: 'song',
@@ -78,4 +43,4 @@ ProductModel.init({
     underscored: true
 })
 
-export default ProductModel;
+export default ReviewModel;
