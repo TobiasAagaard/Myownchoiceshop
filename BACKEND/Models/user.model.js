@@ -2,9 +2,9 @@ import { sequelize } from "../Config/db.sequelize.js";
 import { Sequelize, DataTypes, Model } from "sequelize";
 
 
-class ReviewModel extends Model {}
+class UserModel extends Model {}
 
-ReviewModel.init({
+UserModel.init({
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true, 
@@ -38,9 +38,9 @@ ReviewModel.init({
     
 }, {
     sequelize, 
-    modelName: 'song',
+    modelName: 'user',
     freezeTableName: true,
     underscored: true
 })
 
-export default ReviewModel;
+export default UserModel;

@@ -21,7 +21,7 @@ LikedModel.init({
     
 }, {
     sequelize, 
-    modelName: 'song',
+    modelName: 'liked',
     freezeTableName: true,
     underscored: true
 })

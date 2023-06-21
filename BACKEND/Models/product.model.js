@@ -73,7 +73,7 @@ ProductModel.init({
 
 }, {
     sequelize, 
-    modelName: 'song',
+    modelName: 'product',
     freezeTableName: true,
     underscored: true
 })

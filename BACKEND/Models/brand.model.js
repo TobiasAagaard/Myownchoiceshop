@@ -21,7 +21,7 @@ BrandModel.init({
     
 }, {
     sequelize, 
-    modelName: 'song',
+    modelName: 'brand',
     freezeTableName: true,
     underscored: true
 })

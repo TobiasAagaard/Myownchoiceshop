@@ -38,7 +38,7 @@ ReviewModel.init({
     
 }, {
     sequelize, 
-    modelName: 'song',
+    modelName: 'review',
     freezeTableName: true,
     underscored: true
 })
