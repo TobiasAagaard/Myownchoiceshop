@@ -11,6 +11,15 @@ class ProductController {
 
     list = async (req, res) => {
         let {limit, attributes} = req.query
-        limit = parseInt(limit)  
+        limit = parseInt(limit) || 1000
+        const attr = attributes ? attributes.split(',') : new Array (
+            "id",
+            "name",
+            "description",
+            "img",
+            "stock",
+            "size",
+            "price"
+        )
     }
 }

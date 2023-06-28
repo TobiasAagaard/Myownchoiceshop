@@ -3,6 +3,8 @@ import sequelize from "../Config/db.sequelize.config.js"
 
 const InitRouter = express.Router();
 
+
+
 InitRouter.get('/init', (req, res) => {
     try {
         sequelize.sync()
