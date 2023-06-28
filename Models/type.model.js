@@ -12,29 +12,10 @@ TypeModel.init({
         primaryKey: true
         
     },
-    rating: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        defaultValue: 'Untitled'
-        
-    },
-    comment: {
-        type: DataTypes.TEXT,
-        allowNull: true
-    },
-    
-    title: {
+    type: {
         type: DataTypes.STRING,
         allowNull: false
-    },
-
-    date: {
-        type: DataTypes.INTEGER,
-        allowNull: false
     }
-    ,
-
-
     
 }, {
     sequelize, 
