@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import sequelize from "./Config/sequelize.config.js";
+
 const app = express();
 dotenv.config();
 
@@ -12,5 +13,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`The server is useing this port ${PORT} and runs: localhost:${PORT} `);
+    console.log(`The server is useing this port ${PORT} and runs: www.localhost:${PORT} `);
 });
